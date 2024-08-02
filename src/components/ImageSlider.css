@@ -1,0 +1,120 @@
+.container{
+    margin-top: 150px;
+}
+
+.slider-container{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 200px;
+    align-items: center;
+    position: relative;
+}
+
+.slider-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.slider{
+    border-radius: 1.5rem;
+}
+
+.slider-hidden{
+    display: none;
+}
+
+.left-arrow,
+.right-arrow{
+    position: absolute;
+    font-size: 35px;
+    top: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.left-arrow{
+    left: 20px;
+}
+
+.right-arrow{
+    right: 20px;
+}
+
+.indicators{
+    display: flex;
+    position: absolute;
+    top: 100%;
+    
+}
+
+.indicator{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    border: white;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.indicator-inactive {
+    background-color: gray;
+}
+
+@media screen and (max-width: 375px) {
+    .slider-container img {
+      height: 250px;
+    }
+
+    .left-arrow,
+    .right-arrow{
+        font-size: 20px;
+    }
+
+    .left-arrow{
+        left: 200px;
+    }
+    .right-arrow{
+        right: 200px;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .container{
+        margin-left: 0px;
+    }
+    .slider-container img {
+      height: 300px;
+    }
+  
+    .left-arrow,
+    .right-arrow {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .slider-container img {
+      height: 400px;
+    }
+  
+    .left-arrow,
+    .right-arrow {
+      font-size: 35px;
+    }
+  
+  }
+  @media screen and (max-width: 1200px) {
+    .slider-container img {
+      height: 500px;
+    }
+  
+    .left-arrow,
+    .right-arrow{
+      font-size: 40px;
+    }
+  }
+  
